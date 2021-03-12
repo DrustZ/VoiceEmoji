@@ -1,0 +1,202 @@
+/* Fix user-agent */
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-weight: 300;
+  -webkit-font-smoothing: antialiased;
+}
+
+html, input {
+  font-family:
+    "HelveticaNeue-Light",
+    "Helvetica Neue Light",
+    "Helvetica Neue",
+    Helvetica,
+    Arial,
+    "Lucida Grande",
+    sans-serif;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+  word-wrap: break-word;
+}
+
+/* Pages */
+
+.pages {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.page {
+  height: 100%;
+  position: absolute;
+  width: 100%;
+}
+
+/* Login Page */
+
+.login.page {
+  background-color: #000;
+}
+
+.login.page .form {
+  height: 100px;
+  margin-top: -100px;
+  position: absolute;
+
+  text-align: center;
+  top: 50%;
+  width: 100%;
+}
+
+.login.page .form .usernameInput {
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid #fff;
+  outline: none;
+  padding-bottom: 15px;
+  text-align: center;
+  width: 400px;
+}
+
+.login.page .title {
+  font-size: 4em;
+}
+
+.login.page .usernameInput {
+  font-size: 4em;
+  letter-spacing: 3px;
+}
+
+.login.page .title, .login.page .usernameInput {
+  color: #fff;
+  font-weight: 100;
+}
+
+/* Font */
+
+.log {
+  color: gray;
+  font-size: 2em;
+  margin: 1em;
+  text-align: center;
+}
+
+/* Messages */
+
+.chatArea {
+  height: 67%;
+  padding: 10px;
+}
+
+.messages {
+  height: 100%;
+  overflow-y: scroll;
+  padding: 10px 20px 10px 20px;
+  border-bottom: dashed;
+  border-bottom-color: lightgray;
+}
+
+.emoji {
+  background: none;
+  border: none;
+  margin-top: -1rem;
+}
+
+.message {
+    font-size: 2.5em;
+    margin-bottom: 1em;
+    line-height: 1.1em;
+}
+
+.username {
+  font-weight: 700;
+  overflow: hidden;
+  padding-right: 15px;
+  text-align: right;
+}
+
+/* Input */
+
+.inputarea {
+  bottom: 0;
+  left: 0;
+  height: 25%;
+  border: 3px;
+  right: 0;
+  width: 100%;
+  position: fixed;
+/*
+  display: flex;
+  flex-direction: row;
+*/
+}
+
+.ui.raised.segment.inputMessage {
+  font-size: 2.5em;
+  border: 10px solid #000;
+  width: 100%;
+  outline: none;
+  padding: 15px;
+  resize:none;
+  margin: 0.1em;
+  font-family: Lato,'Helvetica Neue',Arial,Helvetica,sans-serif;
+}
+
+.center.row.btns{
+    width: 100%;
+    padding-top: 0;
+}
+
+.ui.button{
+    font-size: 2.5em;
+}
+/* emoji list */
+
+.ui.emojilist {
+    font-size: 4em;
+    text-align: center;
+}
+
+.ui.buton{
+    font-size: 2em;
+}
+
+.emoji{
+visibility: hidden;
+}
+
+.prevbtn{
+    display: none;
+}
+
+.nextbtn{
+    display: none;
+}
+
+.navbtn{
+    font-size: 0.5em;
+    border: none;
+    margin-top: -1rem;
+}
+
+.sr-only {
+  position: absolute;
+  left: -10000px;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
