@@ -21,7 +21,7 @@ class TextProcessor(object):
         self.numemojis = 5
         
         #you need to create your own google search url from the api console. This one is not guaranteed to work
-        self.gsearchURL = "https://www.googleapis.com/customsearch/v1?key=AIzaSyB9TNKiHU9s43m3GTh5JA1xgFnya1UjtoM&cx=010271278478336651190:5rnmqc0x5v8&q="
+        self.gsearchURL = "https://www.googleapis.com/customsearch/v1?key=insert_your_key_here"
         self.EMOJI_REGEXP = re.compile(_EMOJI_REGEXP)
         self.ep = emojiPredictor
         self.emojidict = json.load(open('emojis.json', encoding="utf-8"))
@@ -95,15 +95,6 @@ class TextProcessor(object):
             if query.translate(self.nopunc) == query:
                 #query process
                 res["text"] = text[:x.start()].rstrip()
-                #for insert command, we only insert emoji
-                # if 'insert' in x[0]:
-                #     emojis = self.getEmojiList(query, False)
-                #     if len(emojis) > 0:
-                #         res["text"] += ' '+emojis[0]+ ' ' + text[x.end():].strip()
-                #     else:
-                #         res["text"] += ' ' + text[x.end():].strip()
-                # #for give me an xxx emoji, we show options
-                # else:
                 emojis = self.getEmojiList(query, True)
                 res["emojis"] = emojis
                 res["query"] = x[0]
@@ -219,8 +210,6 @@ class TextProcessor(object):
         if emojis == None:
             emojis = []
         print (emojis)
-        # if len(emojis) > self.numemojis:
-        #     emojis = emojis[:self.numemojis]
         return emojis
 
     #get emojis from urls like https://emojipedia.org/search/?q=, 
