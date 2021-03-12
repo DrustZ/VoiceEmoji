@@ -25,7 +25,7 @@ class CHNTextProcessor(TextProcessor):
         super(TextProcessor, self).__init__()
         self.ep = emojiPredictor
         self.nopunc = str.maketrans('', '', string.punctuation)
-        self.gsearchURL = "https://www.googleapis.com/customsearch/v1?key=AIzaSyB9TNKiHU9s43m3GTh5JA1xgFnya1UjtoM&cx=010271278478336651190:5rnmqc0x5v8&q="
+        self.gsearchURL = "https://www.googleapis.com/customsearch/v1?key=insert_your_key_here"
         self.EMOJI_REGEXP = re.compile(_EMOJI_REGEXP)
         self.ep = emojiPredictor
         self.numemojis = 5
@@ -113,12 +113,6 @@ class CHNTextProcessor(TextProcessor):
                 query = query[:-2]
             query = self.translateToEng(query)
             res["text"] = text[:x.start()]
-            # if "插入" in x[0]:
-            #     emojis = self.getEmojiList(query, False)
-            #     if len(emojis) > 0:
-            #         res["text"] += emojis[0] + text[x.end():]
-            #     else:
-            #         res["text"] += text[x.end():]
             emojis = self.getEmojiList(query, True)
             res["emojis"] = emojis
             res["query"] = x[0]
@@ -189,11 +183,6 @@ class CHNTextProcessor(TextProcessor):
         # print(u'Text: {}'.format(result['input']))
         return html.unescape(result['translatedText'])
 
-# tp = CHNTextProcessor(EmojiPredictor())
-# if tp.isCHN("ASBCcd"):
-#     print(tp.isCHN("ASBCcd"))
-# if tp.isCHN("ASBCcdw我"):
-#     print(tp.isCHN("ca;jlkfdchen成都"))
 
 # print(tp.processText("", "我想要一只大象"))
 # print(tp.processText("","这个不错给我一个酷酷的表情."))
