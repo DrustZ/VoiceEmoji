@@ -50,18 +50,6 @@ isbn = {9781450380966},
 publisher = {Association for Computing Machinery},
 address = {New York, NY, USA},
 url = {https://doi.org/10.1145/3411764.3445338},
-abstract = { Keyboard-based emoji entry can be challenging for people with visual impairments:
-users have to sequentially navigate emoji lists using screen readers to find their
-desired emojis, which is a slow and tedious process. In this work, we explore the
-design and benefits of emoji entry with speech input, a popular text entry method
-among people with visual impairments. After conducting interviews to understand blind
-or low vision (BLV) users’ current emoji input experiences, we developed Voicemoji,
-which (1) outputs relevant emojis in response to voice commands, and (2) provides
-context-sensitive emoji suggestions through speech output. We also conducted a multi-stage
-evaluation study with six BLV participants from the United States and six BLV participants
-from China, finding that Voicemoji significantly reduced entry time by 91.2% and was
-preferred by all participants over the Apple iOS keyboard. Based on our findings,
-we present Voicemoji as a feasible solution for voice-based emoji entry. },
 booktitle = {Proceedings of the 2021 CHI Conference on Human Factors in Computing Systems},
 articleno = {37},
 numpages = {18}
