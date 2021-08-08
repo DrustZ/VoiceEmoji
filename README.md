@@ -1,7 +1,7 @@
 # VoiceEmoji
 Speech based emoji entry 👄🗣
 
-This is the code repo for the CHI 2021 paper [Voicemoji: Emoji Entry Using Voice for Visually Impaired People](#)
+This is the code repo for the CHI 2021 paper [Voicemoji: Emoji Entry Using Voice for Visually Impaired People](https://drustz.com/assets/pdfs/voicemoji.pdf)
 
 ![teaser](https://user-images.githubusercontent.com/8768646/110891967-00889600-82a8-11eb-9221-7670f1db0668.png)
 
@@ -42,5 +42,28 @@ Use `python -W ignore server.py` to run the server. Then you can navigate to `ht
 If you use the code in your paper, then please cite it as:
 
 ```
-citation coming soon
+@inbook{10.1145/3411764.3445338,
+author = {Zhang, Mingrui Ray and Wang, Ruolin and Xu, Xuhai and Li, Qisheng and Sharif, Ather and Wobbrock, Jacob O.},
+title = {Voicemoji: Emoji Entry Using Voice for Visually Impaired People},
+year = {2021},
+isbn = {9781450380966},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3411764.3445338},
+abstract = { Keyboard-based emoji entry can be challenging for people with visual impairments:
+users have to sequentially navigate emoji lists using screen readers to find their
+desired emojis, which is a slow and tedious process. In this work, we explore the
+design and benefits of emoji entry with speech input, a popular text entry method
+among people with visual impairments. After conducting interviews to understand blind
+or low vision (BLV) users’ current emoji input experiences, we developed Voicemoji,
+which (1) outputs relevant emojis in response to voice commands, and (2) provides
+context-sensitive emoji suggestions through speech output. We also conducted a multi-stage
+evaluation study with six BLV participants from the United States and six BLV participants
+from China, finding that Voicemoji significantly reduced entry time by 91.2% and was
+preferred by all participants over the Apple iOS keyboard. Based on our findings,
+we present Voicemoji as a feasible solution for voice-based emoji entry. },
+booktitle = {Proceedings of the 2021 CHI Conference on Human Factors in Computing Systems},
+articleno = {37},
+numpages = {18}
+}
 ```
